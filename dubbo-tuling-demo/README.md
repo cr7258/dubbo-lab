@@ -1,4 +1,7 @@
 # Dubbo 的基本应用
+
+github 地址: https://github.com/cr7258/dubbo-lab/tree/master/dubbo-tuling-demo
+
 ## 配置文件
 配置文件使用 properties 或者 yaml 格式都可以。
 ### 服务端配置文件
