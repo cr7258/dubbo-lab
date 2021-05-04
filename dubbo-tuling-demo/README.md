@@ -1,5 +1,7 @@
 # Dubbo 的基本应用
 
+Dubbo 采用全 Spring 配置方式，透明化接入应用，对应用没有任何 API 侵入，只需用 Spring 加载 Dubbo 的配置即可。本文列举了 Dubbo 的一些常见的使用场景：例如负载均衡，集群容错，超时等。
+
 github 地址: https://github.com/cr7258/dubbo-lab/tree/master/dubbo-tuling-demo
 
 ## 配置文件
