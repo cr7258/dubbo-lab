@@ -29,6 +29,7 @@ public class ZookeeperRegister {
 
     private static Map<String, String> REGISTER = new HashMap<>();
 
+    //Provider注册服务
     public static void regist(String interfaceName, String implClass, String url) {
         try {
             Stat stat = client.checkExists().forPath(String.format("/dubbo/service/%s", interfaceName));
@@ -43,6 +44,7 @@ public class ZookeeperRegister {
 
     }
 
+    //获取Provider URL
     public static URL getURL(String interfaceName) {
         URL url = null;
         String urlString = null;
@@ -64,7 +66,7 @@ public class ZookeeperRegister {
         return new URL(host,Integer.parseInt(port));
     }
 
-
+    //获取Provider实现类
     public static Class getImplClass(String interfaceName) throws Exception {
         byte[] bytes = client.getData().forPath(String.format("/dubbo/service/%s", interfaceName));
         String urlString = new String(bytes);
