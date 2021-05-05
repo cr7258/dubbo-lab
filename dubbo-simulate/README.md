@@ -64,7 +64,7 @@ Consumer调用服务的时需要完成以下内容：
     * 3.方法参数类型列表
     * 4.方法值参数值列表
 
-github 地址： https://github.com/cr7258/dubbo-lab/tree/master/rpcstudy
+github 地址： https://github.com/cr7258/dubbo-lab/tree/master/dubbo-simulate
 
 ### HelloService 服务
 添加一个 HelloService 服务的接口，Consumer 在依赖中只需要引用 HelloService 接口：
